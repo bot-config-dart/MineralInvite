@@ -1,8 +1,8 @@
-name: mineral_sqliteorm
+name: mineral_music
 description: The sqlite orm module was designed exclusively for the Mineral framework, it allows you to communicate with a sqlite file.
 version: 2.0.0
 
-repository: https://github.com/mineral-dart/mongodb
+repository: https://github.com/mineral-dart/aaa
 # homepage: https://www.example.com
 
 platforms:
@@ -24,4 +24,4 @@ dependencies:
   mineral_environment: ^1.0.1
   mineral_ioc: ^2.0.0
   mineral_package: ^1.1.0
-  sqlite3: ^1.9.1
+  http: ^0.13.3
