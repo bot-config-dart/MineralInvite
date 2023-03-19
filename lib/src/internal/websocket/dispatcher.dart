@@ -1,18 +1,18 @@
-import 'package:mineral_music/src/internal/websocket/contracts/packet_contract.dart';
-import 'package:mineral_music/src/internal/websocket/entities/response.dart';
+import 'package:mineral/internal.dart';
+import 'package:mineral_music/src/internal/websocket/packets/voice_state_update_packet.dart';
 
 class Dispatcher {
-  final Map<PacketType, PacketContract> _packets = {};
+  final Map<PacketType, WebsocketPacket> _packets = {};
 
   Dispatcher() {
-
+      register(PacketType.voiceStateUpdate, VoiceStateUpdate());
   }
 
-  void register(PacketType type, PacketContract packet) {
+  void register(PacketType type, WebsocketPacket packet) {
     _packets.putIfAbsent(type, () => packet);
   }
 
-  void dispatch(WsResponse wsResponse) {
+  void dispatch(WebsocketResponse wsResponse) {
     PacketType packetType = PacketType.values.firstWhere((element) => element.toString() == wsResponse.type);
 
     if(_packets.containsKey(packetType)) {

@@ -1,7 +1,9 @@
+import 'package:mineral/core/extras.dart';
 import 'package:mineral_music/src/contracts/music_contract.dart';
+import 'package:mineral_music/src/internal/websocket/dispatcher.dart';
 import 'package:mineral_package/mineral_package.dart';
 
-class MineralMusic extends MineralPackage implements MusicContract {
+class MineralMusic extends MineralPackage with Container implements MusicContract  {
   @override
   String namespace = 'Mineral/Plugins/Music';
 
@@ -15,6 +17,8 @@ class MineralMusic extends MineralPackage implements MusicContract {
 
   @override
   Future<void> init() async {
+    Dispatcher();
+
 
   }
 }

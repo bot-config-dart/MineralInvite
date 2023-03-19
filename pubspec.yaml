@@ -20,8 +20,13 @@ dev_dependencies:
   lints: ^2.0.0
   test: ^1.16.0
 
+
 dependencies:
   mineral_environment: ^1.0.1
   mineral_ioc: ^2.0.0
   mineral_package: ^1.1.0
   http: ^0.13.3
+  mineral:
+    git:
+      url: https://github.com/mineral-dart/core.git
+      ref: develop
