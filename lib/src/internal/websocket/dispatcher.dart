@@ -1,11 +1,10 @@
 import 'package:mineral/internal.dart';
-import 'package:mineral_music/src/internal/websocket/packets/voice_state_update_packet.dart';
 
 class Dispatcher {
   final Map<PacketType, WebsocketPacket> _packets = {};
 
   Dispatcher() {
-      register(PacketType.voiceStateUpdate, VoiceStateUpdate());
+     // register(PacketType.voiceStateUpdate, ());
   }
 
   void register(PacketType type, WebsocketPacket packet) {
