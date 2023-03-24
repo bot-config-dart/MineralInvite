@@ -180,12 +180,10 @@ packages:
   mineral:
     dependency: "direct main"
     description:
-      path: "."
-      ref: develop
-      resolved-ref: "56bd0e853c601f68ede737fdfb3af31add6e82b2"
-      url: "https://github.com/mineral-dart/core.git"
-    source: git
-    version: "2.6.2"
+      path: "../mineral-core"
+      relative: true
+    source: path
+    version: "3.0.0"
   mineral_cli:
     dependency: transitive
     description:

@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 import 'dart:io';
 
@@ -21,6 +20,7 @@ class MusicWebsocket extends MineralService {
   late MineralClient _client;
   late Dispatcher _dispatcher;
   late HearthBeatMusic _hearthBeat;
+
   //late UDP udp;
 
   MusicWebsocket(this._url, this._token, this._sessionId, this._guildId) {
@@ -33,8 +33,11 @@ class MusicWebsocket extends MineralService {
 
   // getters
   String get url => _url;
+
   String get token => _token;
+
   String get sessionId => _sessionId;
+
   String get guildId => _guildId;
 
   Future<void> connect() async {
@@ -47,28 +50,27 @@ class MusicWebsocket extends MineralService {
       "session_id": _sessionId,
       "token": _token
     });
+    ioc.bind<MusicWebsocket>((ioc) => this);
 
     _websocket.listen((event) async {
       dynamic payload = json.decode(event);
-      VoiceOpCode code = VoiceOpCode.values.firstWhere((element) => element.index == payload['op']);
+      VoiceOpCode code = VoiceOpCode.values
+          .firstWhere((element) => element.index == payload['op']);
       print(payload);
-      switch(code)  {
+      switch (code) {
         case VoiceOpCode.hello:
           double interval = payload['d']['heartbeat_interval'];
-          _hearthBeat = HearthBeatMusic(Duration(milliseconds: interval.toInt()), this);
+          _hearthBeat =
+              HearthBeatMusic(Duration(milliseconds: interval.toInt()), this);
           await _hearthBeat.start();
-          await send(VoiceOpCode.speaking, {
-            "speaking": 5,
-            "delay": 0,
-            "ssrc": 1
-          });
-          UdpMusic udpMusic = UdpMusic(endpoint: Endpoint.any(port: Port(6500)), websocket: this);
+          await send(
+              VoiceOpCode.speaking, {"speaking": 5, "delay": 0, "ssrc": 1});
+          UdpMusic udpMusic = UdpMusic(
+              endpoint: Endpoint.any(port: Port(6500)), websocket: this);
           await udpMusic.connect();
           break;
       }
     });
-
-    ioc.bind<MusicWebsocket>((ioc) => this);
   }
 
   Future<void> disconnect() async {
@@ -94,5 +96,6 @@ enum VoiceOpCode {
   disconnect(10);
 
   final int value;
-  const VoiceOpCode (this.value);
+
+  const VoiceOpCode(this.value);
 }
