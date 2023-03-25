@@ -1,3 +1,4 @@
+import 'package:mineral_music/src/internal/websocket/udp/voice_type_music.dart';
 import 'package:mineral_music/src/internal/websocket/websocket_music.dart';
 import 'package:udp/udp.dart';
 
@@ -11,17 +12,16 @@ class UdpMusic {
     Future<UDP> connect() async {
         udp = await UDP.bind(endpoint);
 
-        print(endpoint.address?.rawAddress);
-        print(endpoint.port?.value);
+        print(udp.socket?.address.address);
+        print(udp.socket?.port.toInt());
         await websocket.send(VoiceOpCode.selectProtocol, {
             "protocol": "udp",
             "data": {
-              "address": endpoint.address?.address,
-              "port": endpoint.port?.value,
-              "mode": "xsalsa20_poly1305_lite"
+              "address": udp.socket?.address.address,
+              "port": udp.socket?.port.toInt(),
+              "mode": VoiceTypeMusic.xsalsa.value
             }
-          }
-        );
+          });
 
         final receive = await UDP.bind(Endpoint.loopback(port: endpoint.port!));
 
