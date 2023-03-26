@@ -2,7 +2,7 @@ name: mineral_invite
 description: The invite package for the mineral framework
 version: 1.0.0
 
-repository: https://github.com/mineral-dart/mineral-invite
+repository: https://github.com/bot-config-dart/MineralInvite
 # homepage: https://www.example.com
 
 platforms:
