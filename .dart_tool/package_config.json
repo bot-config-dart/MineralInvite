@@ -135,7 +135,7 @@
     },
     {
       "name": "mineral",
-      "rootUri": "../../mineral-core",
+      "rootUri": "file:///home/panda/.pub-cache/git/core-00f2cf6ae45f0134cd882495353a84e9c1f63f8c/",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -338,13 +338,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "mineral_music",
+      "name": "mineral_invite",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-03-24T19:41:42.933938Z",
+  "generated": "2023-03-26T15:47:52.696128Z",
   "generator": "pub",
   "generatorVersion": "2.19.4"
 }

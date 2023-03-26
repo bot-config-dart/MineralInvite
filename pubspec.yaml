@@ -1,8 +1,8 @@
-name: mineral_music
-description: The sqlite orm module was designed exclusively for the Mineral framework, it allows you to communicate with a sqlite file.
-version: 2.0.0
+name: mineral_invite
+description: The invite package for the mineral framework
+version: 1.0.0
 
-repository: https://github.com/mineral-dart/aaa
+repository: https://github.com/mineral-dart/mineral-invite
 # homepage: https://www.example.com
 
 platforms:
@@ -28,4 +28,6 @@ dependencies:
   http: ^0.13.3
   udp: ^5.0.3
   mineral:
-    path: ../mineral-core
+    git:
+      url: https://github.com/mineral-dart/core.git
+      ref: develop
