@@ -1,6 +1,8 @@
 import 'package:mineral/core/extras.dart';
 import 'package:mineral_contract/mineral_contract.dart';
 import 'package:mineral_invite/src/events/guild_create.dart';
+import 'package:mineral_invite/src/events/invite_create.dart';
+import 'package:mineral_invite/src/events/invite_delete.dart';
 
 import 'entities/guild_invite_cache.dart';
 import 'events/member_add.dart';
@@ -14,7 +16,9 @@ class MineralInvitationsModule extends MineralPackageContract with Container {
     commands.register([]);
     events.register([
       GuildCreate(),
-      MineralInviteMemberJoin()
+      MineralInviteMemberJoin(),
+      InviteCreate(),
+      InviteDelete(),
     ]);
     contextMenus.register([]);
     states.register([]);
