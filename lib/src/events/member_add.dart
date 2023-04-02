@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:mineral/core/extras.dart';
 import 'package:mineral/framework.dart';
 import 'package:mineral/core/events.dart';
@@ -25,6 +23,7 @@ class MineralInviteMemberJoin extends MineralEvent<MemberJoinEvent> with Invites
         invite = invites.find((element) => !cachedInvites.invites.containsKey(element) && cachedInvites.invites.get(element.code)!.uses < element.uses);
       }
 
+      await cachedInvites.update();
       manager.controller.add(InviteMemberAdd(event, invite, isVanity: invite?.code.equals(event.member.guild.vanityUrlCode) == null ? false : invite!.code.equals(event.member.guild.vanityUrlCode)));
   }
 }

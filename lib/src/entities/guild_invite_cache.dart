@@ -1,6 +1,5 @@
 import 'package:mineral/core/api.dart';
 import 'package:mineral/core/extras.dart';
-import 'package:mineral/src/api/invites/invite.dart';
 import 'package:mineral_invite/src/entities/invite_cache.dart';
 import 'package:mineral_ioc/ioc.dart';
 

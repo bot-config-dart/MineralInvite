@@ -17,4 +17,9 @@ class InviteCache with Container, MineralContext {
         _invites.putIfAbsent(invite.code, () => invite);
     }
   }
+
+  Future<void> update() async {
+    _invites.clear();
+    await init();
+  }
 }
