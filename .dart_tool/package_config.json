@@ -32,6 +32,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "charcode",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/charcode-1.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/collection-1.17.1",
       "packageUri": "lib/",
@@ -135,25 +141,13 @@
     },
     {
       "name": "mineral",
-      "rootUri": "file:///home/panda/.pub-cache/git/core-b2a1e8579511b2ed3c1f6c8575677e017a700852/",
+      "rootUri": "../../mineral-core",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
-      "name": "mineral_cli",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/mineral_cli-1.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "mineral_console",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/mineral_console-1.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
       "name": "mineral_contract",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/mineral_contract-1.1.0",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/mineral_contract-1.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -190,6 +184,12 @@
     {
       "name": "pool",
       "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "prompts",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/prompts-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -243,9 +243,9 @@
     },
     {
       "name": "source_span",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/source_span-1.9.1",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.18"
     },
     {
       "name": "stack_trace",
@@ -273,19 +273,19 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test-1.24.1",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test-1.24.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test_api-0.5.1",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test_api-0.5.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test_core-0.5.1",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test_core-0.5.2",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -321,9 +321,9 @@
     },
     {
       "name": "web_socket_channel",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/web_socket_channel-2.3.0",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.15"
     },
     {
       "name": "webkit_inspection_protocol",
@@ -344,7 +344,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-04-01T11:36:12.087901Z",
+  "generated": "2023-04-25T19:13:33.883085Z",
   "generator": "pub",
-  "generatorVersion": "2.19.5"
+  "generatorVersion": "2.19.6"
 }

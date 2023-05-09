@@ -3,7 +3,7 @@ import 'package:mineral/core/extras.dart';
 import 'package:mineral_invite/src/entities/invite_cache.dart';
 import 'package:mineral_ioc/ioc.dart';
 
-class GuildInviteCache extends MineralService with Container, MineralContext {
+class GuildInviteCache extends MineralService with Container {
   Map<String, InviteCache> _invites = {};
 
   Map<String, InviteCache> get invites => _invites;
