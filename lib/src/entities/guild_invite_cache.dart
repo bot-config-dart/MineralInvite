@@ -4,15 +4,14 @@ import 'package:mineral_invite/src/entities/invite_cache.dart';
 import 'package:mineral_ioc/ioc.dart';
 
 class GuildInviteCache extends MineralService with Container {
-  Map<String, InviteCache> _invites = {};
-
-  Map<String, InviteCache> get invites => _invites;
+  Map<String, InviteCache> invites = {};
+  VanityInvite? vanityInvite;
 
   void add(Guild guild, InviteCache cache) {
-    _invites.putIfAbsent(guild.id, () => cache);
+    invites.putIfAbsent(guild.id, () => cache);
   }
 
   void remove(Guild guild) {
-    _invites.remove(guild.id);
+    invites.remove(guild.id);
   }
 }

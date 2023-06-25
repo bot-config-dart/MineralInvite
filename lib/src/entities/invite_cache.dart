@@ -4,22 +4,25 @@ import 'package:mineral/core/extras.dart';
 import 'package:mineral/src/api/invites/invite.dart';
 
 class InviteCache with Container {
-  Map<String, Invite> _invites = {};
+  Map<String, Invite> invites = {};
+  VanityInvite? vanityInvite;
   final Guild guild;
 
   InviteCache({required this.guild});
 
-  Map<String, Invite> get invites => _invites;
 
-  Future<void> init() async {
-    final invites = await guild.invites.sync();
-    for (Invite invite in invites.values) {
-        _invites.putIfAbsent(invite.code, () => invite);
+  Future<void> sync() async {
+    invites.clear();
+    final invitesSync = await guild.invites.sync();
+    for (Invite invite in invitesSync.values) {
+        invites.putIfAbsent(invite.code, () => invite);
     }
-  }
 
-  Future<void> update() async {
-    _invites.clear();
-    await init();
+    if(guild.features.contains(GuildFeature.vanityUrl)) {
+      final vanityInviteS = guild.vanity?.code;
+      if(vanityInviteS != null) {
+        vanityInvite = await VanityInvite.sync(guild.id);
+      }
+    }
   }
 }
