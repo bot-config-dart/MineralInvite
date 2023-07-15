@@ -1,7 +1,6 @@
 
 import 'package:mineral/core/api.dart';
 import 'package:mineral/core/extras.dart';
-import 'package:mineral/src/api/invites/invite.dart';
 
 class InviteCache with Container {
   Map<String, Invite> invites = {};

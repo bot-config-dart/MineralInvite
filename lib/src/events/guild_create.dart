@@ -1,7 +1,7 @@
 import 'package:mineral/core/api.dart';
+import 'package:mineral/core/events.dart';
 import 'package:mineral/core/extras.dart';
 import 'package:mineral/framework.dart';
-import 'package:mineral/core/events.dart';
 import 'package:mineral_invite/src/entities/invite_cache.dart';
 import 'package:mineral_invite/src/mixins/invite.dart';
 

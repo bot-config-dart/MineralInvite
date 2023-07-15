@@ -196,11 +196,9 @@ packages:
   mineral:
     dependency: "direct main"
     description:
-      path: "."
-      ref: develop
-      resolved-ref: "13d4a1e143d7fc125e91d6d7b90aa3a914133157"
-      url: "https://github.com/mineral-dart/core"
-    source: git
+      path: "../mineral-core"
+      relative: true
+    source: path
     version: "3.1.0"
   mineral_contract:
     dependency: "direct main"

@@ -28,7 +28,9 @@ dependencies:
   http: ^0.13.3
   udp: ^5.0.3
   mineral:
-    git:
-      ref: develop
-      url: https://github.com/mineral-dart/core
+    path: ../mineral-core
+ # mineral:
+  #  git:
+   #   ref: develop
+    #  url: https://github.com/mineral-dart/core
 

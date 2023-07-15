@@ -147,7 +147,7 @@
     },
     {
       "name": "mineral",
-      "rootUri": "file:///home/panda/.pub-cache/git/core-13d4a1e143d7fc125e91d6d7b90aa3a914133157/",
+      "rootUri": "../../mineral-core",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -350,7 +350,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-07-02T18:44:18.710554Z",
+  "generated": "2023-07-14T22:23:40.653941Z",
   "generator": "pub",
   "generatorVersion": "3.0.5"
 }
