@@ -30,7 +30,7 @@ dependencies:
   #mineral:
  #   path: ../mineral-core
   mineral:
-    git:
+    git: # ddd
       ref: main
       url: https://github.com/mineral-dart/core
 
