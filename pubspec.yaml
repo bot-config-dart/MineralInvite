@@ -27,10 +27,10 @@ dependencies:
   mineral_contract: ^1.1.0
   http: ^0.13.3
   udp: ^5.0.3
+  #mineral:
+ #   path: ../mineral-core
   mineral:
-    path: ../mineral-core
- # mineral:
-  #  git:
-   #   ref: develop
-    #  url: https://github.com/mineral-dart/core
+    git:
+      ref: main
+      url: https://github.com/mineral-dart/core
 
