@@ -9,7 +9,8 @@ class GuildCreate extends MineralEvent<GuildCreateEvent> with InvitesMineral, Co
   @override
   Future<void> handle(event) async {
     Guild guild = event.guild;
-    InviteCache cache = InviteCache(guild: guild);
+    VanityInvite? vanityInvite = await VanityInvite.sync(guild.id);
+    InviteCache cache = InviteCache(guild: guild, vanityInvite: vanityInvite);
 
     await cache.sync();
     invitesCache.add(guild, cache);

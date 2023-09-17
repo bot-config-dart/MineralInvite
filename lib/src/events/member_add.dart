@@ -17,7 +17,11 @@ class MineralInviteMemberJoin extends MineralEvent<MemberJoinEvent> with Invites
     EventService manager = container.use<EventService>();
 
     if (invite == null) {
-      if(event.guild.features.contains(GuildFeature.vanityUrl) && event.guild.vanity != null && invitesCache.vanityInvite != null && event.guild.vanity!.uses > invitesCache.vanityInvite!.uses) {
+      VanityInvite? vanityInvite = await VanityInvite.sync(event.member.guild.id);
+      print(vanityInvite?.uses);
+      print(cachedInvites.vanityInvite?.uses);
+
+      if(event.guild.features.contains(GuildFeature.vanityUrl) && vanityInvite != null && cachedInvites.vanityInvite != null && vanityInvite.uses > cachedInvites.vanityInvite!.uses) {
         manager.controller.add(InviteMemberAdd(event, null, vanityInvite: event.guild.vanity, isVanity: true));
         return;
       }
