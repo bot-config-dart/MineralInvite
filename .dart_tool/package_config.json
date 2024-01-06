@@ -3,13 +3,13 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-64.0.0",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-65.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/analyzer-6.2.0",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/analyzer-6.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -51,7 +51,7 @@
     },
     {
       "name": "coverage",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/coverage-1.6.3",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/coverage-1.6.4",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -129,7 +129,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/meta-1.10.0",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/meta-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -141,7 +141,7 @@
     },
     {
       "name": "mineral",
-      "rootUri": "file:///home/panda/.pub-cache/git/core-0f5458a7b94ead59d0b2193918cbc84ef57eb8c8/",
+      "rootUri": "file:///home/panda/.pub-cache/git/core-074ed7c9ba6a638c572f403d0cae2459815ef014/",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -273,7 +273,7 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test-1.24.6",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test-1.24.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -285,7 +285,7 @@
     },
     {
       "name": "test_core",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test_core-0.5.6",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/test_core-0.5.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -309,7 +309,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/vm_service-11.10.0",
+      "rootUri": "file:///home/panda/.pub-cache/hosted/pub.dev/vm_service-12.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -344,7 +344,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-09-16T19:53:55.035364Z",
+  "generated": "2023-10-18T13:21:21.264591Z",
   "generator": "pub",
-  "generatorVersion": "3.1.0"
+  "generatorVersion": "3.1.3"
 }
